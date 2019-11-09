@@ -19,7 +19,7 @@ public class GroceryDBHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         final String SQL_CREATE_GROCERYLIST_TABLE = "CREATE TABLE "+
                 GroceryEntry.TABLE_NAME +" ("+
-                GroceryEntry._ID + "INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                GroceryEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 GroceryEntry.COLUMN_NAME + "TEXT NOT NULL, "+
                 GroceryEntry.COLUMN_AMOUNT +" INTEGER NOT NULL, "+
                 GroceryEntry.COLUMN_TIMESTAMP + " TIMESTAMP DEFAULT CURRENT_TIMESTAMP " +
